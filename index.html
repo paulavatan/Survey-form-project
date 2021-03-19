@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header><h1 id="title">Social Media Survey Form</h1></header>
+        <p id="description">A survey about impact of social media</p>
+        <div class="survey">
+            <form id="survey-form">
+                <label for="name" id="name-label">Name</label>
+                    <input  id="name" type="text" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email</label>
+                    <input  id="email" type="email" placeholder="Enter a valid email adress" required>
+                <label for="Age" id="number-label">Age</label>
+                    <input  id="number" type="number" placeholder="Age" min="7" max="99" required>
+                <label for="network">What social networking sites do you use?<br>
+                    <input type="checkbox" id="media1" name="media1" value="Facebook">
+                    <label for="media1">Facebook</label><br>
+                    <input type="checkbox" id="media2" name="media2" value="Instagram">
+                    <label for="media2">Instagram</label><br>
+                    <input type="checkbox" id="media3" name="media3" value="Twitter">
+                    <label for="media3">Twitter</label><br>
+                    <input type="checkbox" id="media4" name="media4" value="Snapchat">
+                    <label for="media4">Snapchat</label><br>
+                    <input type="checkbox" id="media5" name="media5" value="Pinterest">
+                    <label for="media5">Pinterest</label><br>
+                    <input type="checkbox" id="media6" name="media6" value="TikTok">
+                    <label for="media6">TikTok</label><br>
+                </label>      
+                <label for="time">How many hours a day do you spend on these sites?<br>
+                    <input type="radio" id="time1" name="time" value="1-2 hours"><label for ="time1-2"><label>1-2 hours</label><br>
+                    <input type="radio" id="time2" name="time" value="3-4 hours"><label for ="time3-4"><label>3-4 hours</label><br> 
+                    <input type="radio" id="time3" name="time" value="4+ hours"><label for ="time4+"><label>4+ hours</label><br> 
+                </label> <br>          
+                <label for="policy"  id="dropdown">Do you think privacy policies are effective in social networking sites?<br>
+                    <select name="policy"class="info" id="policy" >
+                        <option value="strongly-agree">Strongly Agree</option>
+                        <option value="agree">Agree</option>
+                        <option value="disagree">Disagree</option>
+                        <option value="strongly-disagree">Strongly Disagree</option>
+                    </select></label> <br>
+                <label>What emotions do you experience when using social networking sites?
+                <textarea id="textarea" class="info" name="textarea" rows="5" cols="50" placeholder="Descibe your emotions"></textarea></label><br>
+                <input type="submit" id="submit" value="Submit">  
+            </form>
+        </div>    
+    </body>
+</html>
